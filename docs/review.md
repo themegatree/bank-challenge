@@ -13,3 +13,6 @@
 - [ ] Have you encapsulated adding to the transactions array in a class?
 - [ ] Are all your class dependencies (even Date? (!)) injected rather than hard-coded?
 - [ ] Are all your unit tests isolated?
+
+
+Once you can say yes to these questions, submit your PR for [review](https://airtable.com/shr74iTry6AtQkHRQ)
