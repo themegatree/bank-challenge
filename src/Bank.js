@@ -12,9 +12,6 @@ class Bank {
   }
 
   makeWithdrawl(amount) {
-    if (amount > this.bankTransactions.balance) {
-      return console.log(`You do not have ${amount} in your bank account.`);
-    }
     this.bankTransactions.logWithdrawl(amount);
   }
 

@@ -10,6 +10,9 @@ class BankTransactions {
   }
 
   logWithdrawl(amount) {
+    if (amount > this.balance) {
+      return console.log(`You do not have ${amount} in your bank account.`);
+    }
     this.balance -= amount;
     this.entries.unshift([this.getDate(), ' ', ` ${amount.toFixed(2)} `, this.balance.toFixed(2)]);
   }
