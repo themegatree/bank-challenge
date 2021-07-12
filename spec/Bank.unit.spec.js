@@ -1,13 +1,14 @@
 const Bank = require('../src/Bank.js');
 
 describe('Does the Bank do it\'s stuff?', () => {
-  const todaysDate = '11/07/2021';
+  const todaysDate = '12/07/2021';
 
   let bank;
   beforeEach(() => {
     bank = new Bank();
     return bank;
   });
+
 
   it('lets you make a deposit and adjusts the balance acordingly', () => {
     // setup
@@ -79,9 +80,9 @@ describe('Does the Bank do it\'s stuff?', () => {
     // verify
     expect(result).toBe(`
 Date || Credit || Debit || Balance
-11/07/2021 || || 500.00 || 2500.00
-11/07/2021 || 2000.00 || || 3000.00
-11/07/2021 || 1000.00 || || 1000.00
+12/07/2021 || || 500.00 || 2500.00
+12/07/2021 || 2000.00 || || 3000.00
+12/07/2021 || 1000.00 || || 1000.00
 `);
   });
 });

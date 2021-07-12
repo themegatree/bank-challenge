@@ -19,6 +19,7 @@ class Bank {
   }
 
   printStatement() {
+    // console.log(this.bankTransactions)
     return this.bankStatement.printStatement(this.bankTransactions);
   }
 }
