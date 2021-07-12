@@ -3,12 +3,9 @@ const BankStatement = require('../src/BankStatement.js');
 describe('Bank Statement', () => {
   let bankStatement = new BankStatement
 
-  
-
-
 
 it('can print a bank statement', () => {
-	
+
     // setup
     let transactionObject = {
 	  entries: [
